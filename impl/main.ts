@@ -1,10 +1,6 @@
 #!/usr/bin/env deno
-
-
-import { BaseMessage, InitMessage, MessageType, BaseMessageBody } from "./messageTypes.ts";
+import { BaseMessage, BaseMessageBody, InitMessage, MessageType } from "./messageTypes.ts";
 import { Node } from "./Node.ts";
-
-
 
 const decoder = new TextDecoder();
 
@@ -53,8 +49,6 @@ class Handler {
     }
   }
 }
-
-
 
 if (import.meta.main) {
   const handler = new Handler()
